@@ -219,9 +219,11 @@ private:
                                                   const Vec3f& tn, FCL_REAL to,
                                                   Vec3f clipped_points[], unsigned int* num_clipped_points, bool clip_triangle = false);
 
+ public:
   /// @brief build a plane passed through triangle v1 v2 v3 
   static bool buildTrianglePlane(const Vec3f& v1, const Vec3f& v2, const Vec3f& v3, Vec3f* n, FCL_REAL* t);
 
+ private:
   /// @brief build a plane pass through edge v1 and v2, normal is tn 
   static bool buildEdgePlane(const Vec3f& v1, const Vec3f& v2, const Vec3f& tn, Vec3f* n, FCL_REAL* t);
 
